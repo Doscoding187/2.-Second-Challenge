@@ -1,0 +1,109 @@
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 50%);
+  --Black: hsl(0, 0%, 7%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  font-size: 62.5%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Yellow);
+}
+
+.container {
+  background-color: var(--White);
+  width: 38.2em;
+  height: 51.9em;
+  border: 1px solid var(--Black);
+  border-radius: 2em;
+  margin-bottom: 2em;
+  box-shadow: 8px 8px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+}
+
+.card .ilustration {
+  width: 100%;
+  border-radius: 1em;
+  margin-bottom: 2.8em;
+  
+}
+
+.card-contents span {
+  margin-bottom: 1.8em;
+}
+.card-contents a {
+  text-decoration: none;
+  color: var(--Black);
+  font-weight: 800;
+  font-size: 0.9rem;
+  background-color: var(--Yellow);
+  padding: 0.4em 0.8em;
+  border-radius: 0.3em;
+  
+  
+}
+
+.Published-date {
+  color: var(--Black);
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 1.5em 0;
+}
+
+.card-contents h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 0.8em;
+}
+
+.card-contents .sub-title {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5em;
+  color: var(--Grey);
+}
+
+.card-contents .avatar {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1.5em;
+  margin-top: 2em;
+}
+
+.avatar img {
+  width: 32px;
+}
+.avatar p {
+  color: var(--Black);
+  font-weight:800;
+  font-size: 1.4em;
+}
+
+@media (min-width: 375px) {
+  .container {
+    background-color: var(--White);
+    width: 38.2em;
+    height: 51.9em;
+    border: 1px solid var(--Black);
+    border-radius: 2em;
+    margin-bottom: 2em;
+    box-shadow: 8px 8px;
+}
